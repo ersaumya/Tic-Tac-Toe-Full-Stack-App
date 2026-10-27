@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f3f6fb;
+}
+
+.board {
+  display: grid;
+  width: min(100%, 430px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 28px auto;
+}
+
+.cell {
+  aspect-ratio: 1;
+  padding: 0;
+  color: #315fe8;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 700;
+}
+
+.cell-o {
+  color: #d26439;
+}
+
+.cell.winning-cell {
+  border-color: #50a879;
+  background: #e8f7ed;
+}
